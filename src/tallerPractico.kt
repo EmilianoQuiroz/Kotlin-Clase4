@@ -1,14 +1,58 @@
 //---TALLER PRACTICO---//
+fun main() {
+//FUNCIONES
+/*
+El identificador de una funcion sigue las mismas reglas que los
+identificadores de las variables:
+-No puede empezar con un numero
+-No puede ser una palabra reservada
+-No puede tener espacios
+-No puede llevar _, @, *, !, -, +
+-Se escriben en cammel case
+-En principio las funciones las vamos a declarar FUERA del main
+-Las declaramos por fuera, pero las invocamos por DENTRO del main
+*/
+    //---EJERCICIO---//
+    /*
+        1. Escribir 4 funciones para calcular suma, resta, multiplicación y
+        división de dos números guardados en variables predefinidas.
+    */
 
-//---CICLO FOR---//
-//500000
+    //---¿Como llamar a una funcion?---//
+
+    //Primero creo una variable que contenga el resultado de esa funcion
+    var resultado: Int = suma(4, 7)
+    //Luego imprimo el resultado de la suma guardado en la variable resultado
+    println(resultado)
+    var resultado1: Int = resta()
+    println(resultado1)
+}
+
+//---FUNCION DE SUMA---//
+fun suma(numero1: Int, numero2: Int): Int {
+    return numero1 + numero2
+}
+
+//---FUNCION DE RESTA---//
+fun resta(numero1: Int = 10, numero2: Int = 5): Int {//Declaracion de una funcion con valores predefinidos
+    return numero1 - numero2
+}
+//011312
+
+
+
+
+
+
+
+
+
+
+
 
 
 //---EJERCICIOS---//
 /*
-1. Escribir 4 funciones para calcular suma, resta, multiplicación y
-división de dos números guardados en variables predefinidas.
-
 2. Vamos a agregar interactividad a nuestro programa. Para ello, vamos
 a hacer uso de una función que permite el ingreso de datos durante
 la ejecución del programa:
