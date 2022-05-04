@@ -26,6 +26,10 @@ identificadores de las variables:
     println(resultado)
     var resultado1: Int = resta()
     println(resultado1)
+    var resultado2: Int = mult()
+    println(resultado2)
+    var resultado3: Int = div(12, 2)
+    println(resultado3)
 }
 
 //---FUNCION DE SUMA---//
@@ -37,21 +41,22 @@ fun suma(numero1: Int, numero2: Int): Int {
 fun resta(numero1: Int = 10, numero2: Int = 5): Int {//Declaracion de una funcion con valores predefinidos
     return numero1 - numero2
 }
-//011312
 
+//---FUNCION DE MULTIPLICACION---//
+fun mult(numero1: Int = 2, numero2: Int = 20):Int {
+    return numero1 * numero2
+}
 
-
-
-
-
-
-
-
-
-
-
-
-//---EJERCICIOS---//
+//---FUNCION DE DIVICION---//
+fun div(numero1: Int, numero2: Int):Int{
+    return numero1 / numero2
+}
+/*
+FUNCION EN UNA SOLA LINEA
+fun retornaUnNumero() = 10
+Esta funcion no tiene parametro y simplemente retorna el numero 10
+*/
+//---EJERCICIO 2---//
 /*
 2. Vamos a agregar interactividad a nuestro programa. Para ello, vamos
 a hacer uso de una función que permite el ingreso de datos durante
@@ -76,3 +81,5 @@ múltiplos de 2, de 3 o de 5
 *Tener en cuenta para todas las operaciones, que el Array pueda
 cambiar, es decir, que es necesario calcular la longitud del Array.
 */
+
+//013506
