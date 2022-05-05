@@ -30,6 +30,15 @@ identificadores de las variables:
     println(resultado2)
     var resultado3: Int = div(12, 2)
     println(resultado3)
+    var saludo = saludar()
+    println(saludo)
+    var saludo2 = saludarNombre("Santiago")
+    println(saludo2)
+   /* var baseCuadrado = 23.33f
+    var alturaCuadrado = 34.33f
+    var area = areaCuadrado(baseCuadrado, alturaCuadrado)
+    println(area)
+    */
 }
 
 //---FUNCION DE SUMA---//
@@ -43,43 +52,36 @@ fun resta(numero1: Int = 10, numero2: Int = 5): Int {//Declaracion de una funcio
 }
 
 //---FUNCION DE MULTIPLICACION---//
-fun mult(numero1: Int = 2, numero2: Int = 20):Int {
+fun mult(numero1: Int = 2, numero2: Int = 20): Int {
     return numero1 * numero2
 }
 
 //---FUNCION DE DIVICION---//
-fun div(numero1: Int, numero2: Int):Int{
+fun div(numero1: Int, numero2: Int): Int {
     return numero1 / numero2
+
 }
 /*
 FUNCION EN UNA SOLA LINEA
 fun retornaUnNumero() = 10
 Esta funcion no tiene parametro y simplemente retorna el numero 10
 */
-//---EJERCICIO 2---//
-/*
-2. Vamos a agregar interactividad a nuestro programa. Para ello, vamos
-a hacer uso de una función que permite el ingreso de datos durante
-la ejecución del programa:
-Agregar a la función anterior la posibilidad de ingresar los dos valores
-en tiempo de ejecución, a través de la consola
-*El programa debe mostrar textos que den información al usuario de lo
-que tiene que hacer y de los resultados, por ejemplo:
-“Programa para sumar”
-“Ingrese el primer número: ”
-“La suma de 2 + 3, dio como resultado 5”
-Dado el siguiente array [12, 0, -4, 48, -52, 25, 2, 31]
-A. Escribir una función que devuelva el resultado de la suma de todos
-sus valores.
-B. Escribir una función que devuelva el promedio de los valores del
-array.
-C. Escribir una función que devuelva la cantidad de números negativos.
-D. Escribir una función que muestre los números impares y además que
-muestre la cantidad.
-E. Escribir una función que muestre los números del Array que sean
-múltiplos de 2, de 3 o de 5
-*Tener en cuenta para todas las operaciones, que el Array pueda
-cambiar, es decir, que es necesario calcular la longitud del Array.
-*/
 
-//013506
+//Funcion saludar
+fun saludar() = "Esta funcion no tiene parametro"
+
+//Esta funcion no retorna un valor pero puede recibir un argumento
+//En este caso el nombre
+fun saludarNombre(nombre: String) {
+    println("Hola $nombre, como estas?")
+}
+
+//Palabra reservada de Kotlin
+//Unit = Indica que la funcion no retorna un valor
+//Es similiar al void en java
+//En el caso de las funciones que no devuelven un valor no es necesario indicarlo
+//EJEMPLO
+//Calcular el area de un cuadrado
+//fun areaCuadrado(base: Float, altura: Float) = base * altura
+
+
